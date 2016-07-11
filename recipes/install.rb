@@ -10,3 +10,9 @@ yum_repository 'mongodb-org-3.2' do
   gpgkey 'https://www.mongodb.org/static/pgp/server-3.2.asc'
   enabled true
   action :create
+end
+ 
+yum_package 'mongodb-org' do
+  action :install
+end
+
