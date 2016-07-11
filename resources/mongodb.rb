@@ -1,7 +1,5 @@
 resource_name :mongodb
 
-property :name, RubyType, default: 'value'
-
 action :install do
   yum_repository 'mongo-org-3.2' do
     description 'MongoDB Repository'
