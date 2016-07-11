@@ -20,3 +20,8 @@ end
 service 'mongod' do
   action [ :enable, :start ]
 end
+
+httpd 'build website' do
+  homepage '<h1>Welcome to CAT Team Website!<h1>'
+  action :create
+end
