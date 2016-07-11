@@ -6,4 +6,3 @@
 #
 
 include_recipe 'cat-mongodb::install'
-
