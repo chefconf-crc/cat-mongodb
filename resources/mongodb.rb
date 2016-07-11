@@ -10,13 +10,13 @@ action :install do
     action :create
   end
  
- yum_package 'mongodb-org' do
-   action :install
- end
+  yum_package 'mongodb-org' do
+    action :install
+  end
 
- service 'mongod' do
-   action [ :enable, :start ]
- end
+  service 'mongod' do
+    action [ :enable, :start ]
+  end
 end
 
 action :uninstall do
