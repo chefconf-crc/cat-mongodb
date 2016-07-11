@@ -5,3 +5,5 @@ license 'all_rights'
 description 'Installs/Configures cat-mongodb'
 long_description 'Installs/Configures cat-mongodb'
 version '0.1.0'
+
+depends 'yum'
